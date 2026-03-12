@@ -149,7 +149,7 @@ Example:
 
 **Tanmoy Patra**
 
-- GitHub: https://github.com/your-username
+- GitHub: https://github.com/Tanmoy023/
 - LinkedIn: (Add your LinkedIn link)
 
 ---
