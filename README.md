@@ -151,7 +151,7 @@ Example:
 
 📧 tanmoypatra369@gmail.com  
 🔗 LinkedIn: https://www.linkedin.com/in/tanmoy-patra-00b756236  
-🐙 GitHub: https://github.com/Tanmoy023
+💻 GitHub: https://github.com/Tanmoy023
 
 ---
 
