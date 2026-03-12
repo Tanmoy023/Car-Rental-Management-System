@@ -149,8 +149,9 @@ Example:
 
 **Tanmoy Patra**
 
-- GitHub: https://github.com/Tanmoy023/
-- LinkedIn: (Add your LinkedIn link)
+📧 tanmoypatra369@gmail.com  
+🔗 LinkedIn: https://www.linkedin.com/in/tanmoy-patra-00b756236  
+🐙 GitHub: https://github.com/Tanmoy023
 
 ---
 
