@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Available Cars - Car Rental{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Our Fleet</h2>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for car in cars %}
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            {% if car.image %}
+            <img src="{{ car.image.url }}" class="card-img-top" alt="{{ car.make }} {{ car.model }}"
+                style="height: 200px; object-fit: cover;">
+            {% else %}
+            <div class="bg-secondary text-white d-flex align-items-center justify-content-center"
+                style="height: 200px;">
+                <span>No Image</span>
+            </div>
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ car.year }} {{ car.make }} {{ car.model }}</h5>
+                <p class="card-text text-muted">{{ car.description|truncatewords:20 }}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="h5 mb-0 text-primary">${{ car.price_per_day }}/day</span>
+                    <span class="badge {% if car.status == 'AVAILABLE' %}bg-success{% else %}bg-secondary{% endif %}">
+                        {{ car.get_status_display }}
+                    </span>
+                </div>
+            </div>
+            <div class="card-footer bg-white border-top-0">
+                <a href="{% url 'car_detail' car.pk %}" class="btn btn-outline-primary w-100">View Details</a>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <div class="col-12">
+        <div class="alert alert-info">No cars available at the moment. Check back soon!</div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
